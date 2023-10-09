@@ -1,0 +1,20 @@
+{
+  "files": {
+    "main.css": "/quadb-tech-assignment/static/css/main.4b8cfd1e.chunk.css",
+    "main.js": "/quadb-tech-assignment/static/js/main.8cd4ee77.chunk.js",
+    "main.js.map": "/quadb-tech-assignment/static/js/main.8cd4ee77.chunk.js.map",
+    "runtime-main.js": "/quadb-tech-assignment/static/js/runtime-main.fbd65e1d.js",
+    "runtime-main.js.map": "/quadb-tech-assignment/static/js/runtime-main.fbd65e1d.js.map",
+    "static/js/2.51b8e1d7.chunk.js": "/quadb-tech-assignment/static/js/2.51b8e1d7.chunk.js",
+    "static/js/2.51b8e1d7.chunk.js.map": "/quadb-tech-assignment/static/js/2.51b8e1d7.chunk.js.map",
+    "index.html": "/quadb-tech-assignment/index.html",
+    "static/css/main.4b8cfd1e.chunk.css.map": "/quadb-tech-assignment/static/css/main.4b8cfd1e.chunk.css.map",
+    "static/js/2.51b8e1d7.chunk.js.LICENSE.txt": "/quadb-tech-assignment/static/js/2.51b8e1d7.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.fbd65e1d.js",
+    "static/js/2.51b8e1d7.chunk.js",
+    "static/css/main.4b8cfd1e.chunk.css",
+    "static/js/main.8cd4ee77.chunk.js"
+  ]
+}
