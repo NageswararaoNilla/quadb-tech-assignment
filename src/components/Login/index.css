@@ -19,8 +19,13 @@
 }
 
 .login-logo {
-  width: 110px;
-  margin: 20px 5px;
+  width: 120px;
+  color: #e90f0f;
+  font-family: "Bree Serif";
+  font-size: 32px;
+  font-weight: 700;
+  margin-top: 10px;
+  margin-bottom: 12px;
 }
 
 .label {
@@ -72,4 +77,14 @@
   color: #ff0b37;
   font-family: "Roboto";
   font-size: 10px;
+}
+
+.link {
+  text-decoration: underline;
+}
+
+.new-user {
+  color: #16d135;
+  font-family: "Roboto";
+  font-size: 24px;
 }

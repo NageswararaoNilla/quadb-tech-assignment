@@ -1,4 +1,5 @@
 import { Component } from "react";
+import { Link } from "react-router-dom";
 
 import "./index.css";
 
@@ -19,7 +20,7 @@ class Login extends Component {
 
   onSuccessLogin = () => {
     const { history } = this.props;
-    console.log(history);
+    // console.log(history);
     history.replace("/");
   };
 
@@ -56,9 +57,8 @@ class Login extends Component {
             <img
               src="https://images.app.goo.gl/Ltfu93fv4sKDTTWLA"
               alt="website logo"
-              className="login-logo"
             />
-            <h1>Login</h1>
+            <h1 className="login-logo">Login</h1>
           </div>
           <form className="form-container" onSubmit={this.submitForm}>
             <label htmlFor="username" className="label">
@@ -87,6 +87,10 @@ class Login extends Component {
               Login
             </button>
             {showErrorMsg && <p className="error-msg">*{errorMsg}</p>}
+
+            <Link to="/signup" className="link">
+              <h1 className="new-user">New User: Signup Here!</h1>
+            </Link>
           </form>
         </div>
       </div>

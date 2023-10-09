@@ -1,24 +1,25 @@
-import { Link } from "react-router-dom";
+import { useState } from "react";
+import { withRouter, Link } from "react-router-dom";
 import { AiFillHome } from "react-icons/ai";
 import { BsBriefcaseFill } from "react-icons/bs";
-import { FiLogOut } from "react-icons/fi";
-
-import { useLocation } from "react-router-dom";
+// import { FiLogOut } from "react-icons/fi";
+import { AiOutlineLogin } from "react-icons/ai";
+import { AiOutlineLogout } from "react-icons/ai";
 
 import "./index.css";
 
 const Header = (props) => {
-  const navigate = useLocation();
-  console.log(navigate);
-
-  const isLogin = localStorage.getItem("jwt_token") !== undefined;
+  const [isLogin, setIsLogin] = useState(false);
+  const { history } = props;
 
   const onLogoutOrLogin = () => {
     if (isLogin) {
       localStorage.removeItem("jwt_token");
-      navigate("/", { replace: true });
+      history.replace("/");
+      setIsLogin(false);
     } else {
-      navigate("/login", { replace: true });
+      history.replace("/login");
+      setIsLogin(true);
     }
   };
 
@@ -26,12 +27,8 @@ const Header = (props) => {
     <nav className="nav-container">
       <div className="nav-content">
         <div>
-          <Link to="/">
-            <img
-              src="https://assets.ccbp.in/frontend/react-js/logo-img.png"
-              alt="website logo"
-              className="header-logo"
-            />
+          <Link to="/" className="link">
+            <h1 className="header-logo">QuadB Tech</h1>
           </Link>
         </div>
         <ul className="icons-container">
@@ -51,7 +48,11 @@ const Header = (props) => {
               className="logout-icon"
               onClick={onLogoutOrLogin}
             >
-              <FiLogOut color="white" size={20} />
+              {isLogin ? (
+                <AiOutlineLogout color="white" size={20} />
+              ) : (
+                <AiOutlineLogin color="white" size={20} />
+              )}
             </button>
           </li>
         </ul>
@@ -77,4 +78,4 @@ const Header = (props) => {
   );
 };
 
-export default Header;
+export default withRouter(Header);

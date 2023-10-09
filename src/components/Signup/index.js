@@ -37,8 +37,9 @@ class Login extends Component {
   };
 
   onSuccessSignup = () => {
-    const navigate = useNavigate();
-    navigate("/", { replace: true });
+    const { history } = this.props;
+    // console.log(history);
+    history.replace("/");
   };
 
   submitForm = async (event) => {
@@ -73,12 +74,7 @@ class Login extends Component {
       <div className="login-box-container">
         <div className="login-container">
           <div className="login-logo-container">
-            <img
-              src="https://assets.ccbp.in/frontend/react-js/logo-img.png"
-              alt="website logo"
-              className="login-logo"
-            />
-            <h1>Signup</h1>
+            <h1 className="login-logo">Signup</h1>
           </div>
           <form className="form-container" onSubmit={this.submitForm}>
             <label htmlFor="username" className="label">
