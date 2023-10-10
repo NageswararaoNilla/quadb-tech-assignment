@@ -1,4 +1,4 @@
-import { setState } from "react";
+import { useState } from "react";
 
 import { Link } from "react-router-dom";
 
@@ -7,7 +7,7 @@ import Header from "../Header";
 import "./index.css";
 
 const Home = (props) => {
-  const [searchInput, setSearchInput] = setState("");
+  const [searchInput, setSearchInput] = useState("");
 
   const { history } = this.props;
   console.log(props);
@@ -17,10 +17,9 @@ const Home = (props) => {
   };
 
   const onClickFindJobs = () => {
-    history.push("/jobs");
+    const url = `https://en-in.whatjobs.com/jobs/${searchInput}`;
+    // history.push("/jobs");
   };
-
-  const url = `https://en-in.whatjobs.com/jobs/${searchInput}`;
 
   return (
     <>
