@@ -1,3 +1,5 @@
+import { setState } from "react";
+
 import { Link } from "react-router-dom";
 
 import Header from "../Header";
@@ -5,12 +7,20 @@ import Header from "../Header";
 import "./index.css";
 
 const Home = (props) => {
-  const { history } = props;
+  const [searchInput, setSearchInput] = setState("");
+
+  const { history } = this.props;
   console.log(props);
+
+  const onChangeSearchInput = (event) => {
+    setSearchInput(event.target.value);
+  };
 
   const onClickFindJobs = () => {
     history.push("/jobs");
   };
+
+  const url = `https://en-in.whatjobs.com/jobs/${searchInput}`;
 
   return (
     <>
@@ -24,9 +34,10 @@ const Home = (props) => {
             type="search"
             placeholder="Programming Language"
             className="search-input"
-            // value={searchInput}
+            value={searchInput}
+            onChange={onChangeSearchInput}
           />
-          <Link to="/jobs" className="link">
+          <a href={url}>
             <button
               type="button"
               className="home-button"
@@ -34,7 +45,7 @@ const Home = (props) => {
             >
               Find Jobs
             </button>
-          </Link>
+          </a>
         </div>
         <div className="home-content">
           <h1 className="home-heading">Find The Job That Fits Your Life</h1>
