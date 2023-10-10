@@ -1,20 +1,20 @@
 {
   "files": {
-    "main.css": "/quadb-tech-assignment/static/css/main.a83ae465.chunk.css",
-    "main.js": "/quadb-tech-assignment/static/js/main.a261e793.chunk.js",
-    "main.js.map": "/quadb-tech-assignment/static/js/main.a261e793.chunk.js.map",
+    "main.css": "/quadb-tech-assignment/static/css/main.4f340c6a.chunk.css",
+    "main.js": "/quadb-tech-assignment/static/js/main.afa7857e.chunk.js",
+    "main.js.map": "/quadb-tech-assignment/static/js/main.afa7857e.chunk.js.map",
     "runtime-main.js": "/quadb-tech-assignment/static/js/runtime-main.fbd65e1d.js",
     "runtime-main.js.map": "/quadb-tech-assignment/static/js/runtime-main.fbd65e1d.js.map",
-    "static/js/2.dd564d5e.chunk.js": "/quadb-tech-assignment/static/js/2.dd564d5e.chunk.js",
-    "static/js/2.dd564d5e.chunk.js.map": "/quadb-tech-assignment/static/js/2.dd564d5e.chunk.js.map",
+    "static/js/2.ed76bd1a.chunk.js": "/quadb-tech-assignment/static/js/2.ed76bd1a.chunk.js",
+    "static/js/2.ed76bd1a.chunk.js.map": "/quadb-tech-assignment/static/js/2.ed76bd1a.chunk.js.map",
     "index.html": "/quadb-tech-assignment/index.html",
-    "static/css/main.a83ae465.chunk.css.map": "/quadb-tech-assignment/static/css/main.a83ae465.chunk.css.map",
-    "static/js/2.dd564d5e.chunk.js.LICENSE.txt": "/quadb-tech-assignment/static/js/2.dd564d5e.chunk.js.LICENSE.txt"
+    "static/css/main.4f340c6a.chunk.css.map": "/quadb-tech-assignment/static/css/main.4f340c6a.chunk.css.map",
+    "static/js/2.ed76bd1a.chunk.js.LICENSE.txt": "/quadb-tech-assignment/static/js/2.ed76bd1a.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.fbd65e1d.js",
-    "static/js/2.dd564d5e.chunk.js",
-    "static/css/main.a83ae465.chunk.css",
-    "static/js/main.a261e793.chunk.js"
+    "static/js/2.ed76bd1a.chunk.js",
+    "static/css/main.4f340c6a.chunk.css",
+    "static/js/main.afa7857e.chunk.js"
   ]
 }
